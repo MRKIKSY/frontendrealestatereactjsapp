@@ -7,6 +7,7 @@ import listingRouter from './routes/listing.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
 dotenv.config();
+console.log(process.env.MONGO_URI); // Check if MONGO_URI is defined
 
 mongoose
   .connect(process.env.MONGO_URI)
